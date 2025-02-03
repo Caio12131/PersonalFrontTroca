@@ -1,0 +1,14 @@
+name = "personal-inteligente"
+type = "javascript"
+
+account_id = "e1057b9d90ac5608b750b856533975eaac23f"
+workers_dev = true
+
+[build]
+command = "npm run build"
+upload.format = "service-worker"
+pages_build_output_dir = "build"
+
+[env.production]
+name = "personal-inteligente-prod"
+workers_dev = true
