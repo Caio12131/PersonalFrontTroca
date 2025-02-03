@@ -1,0 +1,124 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  
+  .signin-card {
+    width: 90%;
+    max-width: 390px; /* Reduzindo um pouco mais a largura máxima */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff; /* Bordas brancas */
+    border-radius: 10px;
+   
+  }
+
+  
+
+  .forgot-password-link{
+    color:#48be03
+  }
+  
+ 
+  
+  .logo-image {
+    width: 100px; /* Reduzindo o tamanho da imagem */
+    height: 100px; /* Reduzindo o tamanho da imagem */
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .signin-heading {
+    font-family: 'Poppins', sans-serif; /* Adiciona a fonte Poppins */
+    font-size: 1.5rem; /* Reduzindo um pouco o tamanho do título */
+    color: #333;
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+    text-align: center;
+  }
+  
+  .signin-form {
+    margin-bottom: 15px; /* Reduzindo a margem inferior */
+  }
+  
+  .form-group {
+    margin-bottom: 10px; /* Reduzindo a margem inferior */
+  }
+  
+  
+  .form-input {
+    width: 100%;
+    padding: 12px; /* Ajustando o padding */
+    font-size: 1rem;
+    border: 1px solid #e0e0e0; /* Bordas cinzas mais suaves */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+   .error-message {
+    color: #ff0000;
+    margin-top: 8px; /* Reduzindo a margem superior */
+    margin-bottom: 12px; /* Aumentando a margem inferior */
+    text-align: center;
+  }
+  
+  .signin-button {
+    width: 100%;
+    padding: 12px; /* Ajustando o padding */
+    background-color: #48be03; /* Cor de fundo do botão */
+    color: #fff;
+    font-size: 1rem; /* Tamanho da fonte */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .signin-links {
+    text-align: center;
+  }
+  
+  .signup-link {
+    color: #585858; /* Cor verde para o link */
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 0.875rem;
+    padding: 8px 12px; /* Adiciona espaçamento interno */
+    border: 2px solid #585858; /* Borda verde */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  @media (min-width: 1024px) {
+    .signin-card {
+      max-width: 500px; /* Largura máxima para telas maiores */
+      padding: 30px; /* Ajusta o padding */
+    }
+  
+    .signin-heading {
+      font-size: 2rem; /* Tamanho maior para o título em telas maiores */
+    }
+  
+    .form-input {
+      padding: 16px; /* Aumenta o padding em telas maiores */
+    }
+  
+    .signin-button {
+      padding: 16px; /* Aumenta o padding do botão em telas maiores */
+    }
+    .logo-image {
+        width: 120px; /* Reduzindo o tamanho da imagem */
+        height: 120px; /* Reduzindo o tamanho da imagem */
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .no-underline {
+        text-decoration: none;
+      }
+      
+  }

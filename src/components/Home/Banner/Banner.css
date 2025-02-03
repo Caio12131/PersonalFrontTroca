@@ -1,0 +1,31 @@
+.banner {
+  background: linear-gradient(to right,#7fb244, #63be4f); /* Gradiente atualizado */
+  color: white; /* Cor do texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 7px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Shadow XL equivalente */
+}
+.banner-button {
+  margin: 0;
+  text-align: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px; /* Tamanho da fonte ajustado se necessário */
+  cursor: pointer;
+  padding: 2px 5px; /* Padding ajustado para manter a proporção */
+  display: flex;
+  align-items: center; /* Alinha ícone com o texto */
+  text-decoration: none; /* Remove o sublinhado do link em estado normal */
+}
+
+.banner-button:hover, .banner-button:active, .banner-button:focus {
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse, clicar ou focar */
+}
+
+.banner-button svg {
+  margin-left: 10px; /* Espaço entre o texto e o ícone */
+}

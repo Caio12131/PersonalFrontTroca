@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .responsive-section {
+    padding: 2rem 1rem; 
+  }
+
+  .banner-promocional {
+    background: linear-gradient(to right, #d33e3e, #d38282); /* Gradiente atualizado */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 6px 7px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1); /* Shadow XL equivalente */      font-size: 15px; /* Tamanho do texto */
+  }
+  .responsive-container {
+    padding: 2rem 1rem; 
+  }
+
+  .responsive-title {
+    font-size: 1.2rem; 
+  }
+
+  .responsive-icon {
+    height: 1.6rem; 
+    width: 1.6rem; 
+  }
+
+  .responsive-text {
+    font-size: 1.0rem; 
+  }
+}
+

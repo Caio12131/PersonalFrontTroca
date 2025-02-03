@@ -1,0 +1,142 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinhado ao topo */
+  height: 100vh;
+  position: relative; /* Add relative positioning */
+  padding-top: 20vh; /* Adjust this value to control how far down from the top the loader should be */
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #000; /* Black border */
+  border-top: 4px solid #fff; /* White top for contrast */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.progress-wrapper {
+  width: 80%;
+  padding: 20px;
+  position: relative; /* Change this to relative */
+  margin-top: 20px; /* Adjust space between loader and progress bar */
+}
+
+.progress-bar {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #000 0%, #000 100%);
+  height: 20px;
+  border-radius: 10px;
+}
+
+.timer-seconds {
+  text-align: center;
+  font-size: 16px;
+  color: #374151;
+  margin-top: 10px;
+}
+
+.icon-and-text {
+  text-align: center;
+  position: absolute;
+  top: 60%; /* Posição após o progresso */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.save-button-unique {
+  background-color: #000; /* Darker green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button-unique:hover {
+  background-color: #0C6030; /* Even darker on hover */
+}
+
+.centered-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.white {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  animation: flash 2.4s linear infinite;
+  opacity: 0;
+}
+
+
+
+@keyframes rotate5123 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes dotsY {
+  66% {
+    opacity: .1;
+    width: 2.4em;
+  }
+  77% {
+    opacity: 1;
+    width: 0;
+  }
+}
+
+@keyframes dotsX {
+  66% {
+    opacity: .1;
+    height: 2.4em;
+  }
+  77% {
+    opacity: 1;
+    height: 0;
+  }
+}
+
+@keyframes flash {
+  33%, 66% { opacity: 0; }
+  55% { opacity: .6; }
+}

@@ -1,0 +1,19 @@
+
+  
+
+  .logo-image {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto -10px;
+  }
+  
+  @media (max-width: 376px) { /* Exemplo de max-width para telas menores, como iPhone SE */
+    
+    .logo-image {
+      width: 100px; /* Reduzindo o tamanho da logo */
+      height: 100px; /* Reduzindo o tamanho da logo */
+      margin-bottom: 10px; /* Ajustando a margem inferior da logo */
+    }
+  }
+  

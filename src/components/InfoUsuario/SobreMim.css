@@ -1,0 +1,83 @@
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+
+ .button-dietas {
+  background-color: #17A34A;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.button{ 
+  border: 1px solid #17A34A;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  color: #17A34A;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;}
+
+.button:hover, .button-dietas:hover {
+  transform: scale(1.05);
+}
+
+.form-container {
+  grid-column: 1 / -1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.form-field:nth-child(2n) {
+  margin-right: 0;
+}
+
+.form-field label{
+  padding: 10px;
+  margin: 0;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.form-field input{
+  padding: 10px;
+  border: 1.4px solid rgb(195, 195, 195);
+  border-radius: 12px;
+  width: 100%;
+  transition: border-color 0.3s;
+  outline: none;
+}
+.form-field select{
+  background-color: white;
+  border: 1.4px solid #8685857e;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  color: #4a4949;
+  transition: border-color 0.3s;
+  outline: none;
+}

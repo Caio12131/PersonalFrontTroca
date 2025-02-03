@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kreon:wght@500&display=swap');
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+  background-color: rgb(38, 131, 2); /* Change the background color to white */
+}
+
+
+.hamburger-menu.open {
+  left: 0;
+
+  /* Mostra o menu quando aberto */
+}
+
+.imgLogo{
+  margin-right: -50px;
+}
+
+.div-info{
+  margin-left: -1.2rem;
+  margin-top: 15px;
+
+}
+
+
+.menu-toggle {
+  cursor: pointer;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px; /* Bordas arredondadas para um visual mais moderno */
+}
+
+.menu-bar {
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(45deg, #48be03, #73c36a); /* Gradiente diagonal */
+  margin: 3px 0; /* Aumente o valor para mais espaçamento */
+  transition: 0.4s;
+}
+
+.menu-bar:nth-child(1) {
+  width: 30px; /* Menor largura */
+}
+
+.menu-bar:nth-child(2) {
+  width: 30px; /* Largura média */
+}
+
+.menu-bar:nth-child(3) {
+  width: 30px; /* Maior largura */
+}
+
+.menu-bar.open {
+  transform: rotate(-45deg);
+  background-color: #208a00;
+
+}
+
+.border-botton{
+  border-bottom: 1px solid black;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 2px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+p {
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  /* Adicione esta linha para habilitar a barra de rolagem vertical */
+  opacity: 0;
+  /* Inicialmente, definimos a opacidade como 0 para ocultar o modal */
+  pointer-events: none;
+  /* Evite interações com o modal oculto */
+  transition: opacity 0.3s ease-in-out;
+  /* Adicionamos uma transição suave de opacidade */
+}
+
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+
+}
+
+.close-button:hover {
+  color: #ff5722;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.info-card {
+  color: #333;
+  /* Texto escuro para contraste */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+  padding: 8px;
+  /* Padding para espaço interno */
+  margin: 16px 0;
+  /* Margem para espaço externo */
+}
+
+
+.info-card .icon-text {
+  display: flex;
+  /* Alinhamento flexível */
+  align-items: center;
+  /* Alinhamento vertical dos ícones com o texto */
+  color: #333;
+  /* Cor do texto */
+}
+
+.info-card .icon-text .text-lg {
+  margin-right: 8px;
+  /* Espaçamento entre ícone e texto */
+}
+
+/* Garanta que a cor do texto não é branca para itens dentro do .info-card */
+.info-card li,
+.info-card p {
+  color: #333;
+  /* Texto escuro para contraste */
+}
+

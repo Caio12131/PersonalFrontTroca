@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kreon:wght@500&display=swap');
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+}
+
+.borderentrar{
+  border: 1px solid rgb(21 128 61 );
+}
+
+
+/* Estilos para o título */
+.h3-custom {
+  font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+  color: #17A34A; /* Cor azul clara, ajuste conforme a paleta de cores do seu site */
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin: 20px 0; /* Espaçamento acima e abaixo do título */
+  padding: 10px 0; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco translúcido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave em volta do título */
+  transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.h3-custom:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  color: #087530; /* Muda a cor ao passar o mouse */
+}
+arousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* Remove o ícone padrão */
+}
+
+
+
+
+/* Ajustando a posição das setas, se necessário */
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); /* Inverte as cores das setas se precisar de maior contraste ou outra cor */
+}
+/* App.css */
+.carousel-image {
+  width: 300px; /* Ajuste conforme a largura desejada */
+  height: 300px; /* Ajuste conforme a altura desejada */
+  object-fit: cover;
+  border-radius: 20%; /* Isso irá tornar a imagem completamente redonda */
+  display: inline-block; /* Isso ajuda a manter as proporções */
+  margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+
+.carousel-image img {
+  display: block; /* remove espaço extra abaixo da imagem */
+}
+
+
+.App {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #277A00;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  height: 55px;
+  align-items: flex-start;
+}
+
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  /* Ajuste o valor para mover o botão mais para a direita */
+  background-color: #1bce08;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-text {
+  margin-bottom: -8px;
+  /* Espaço entre o texto e o botão */
+  color: #fff;
+  /* Cor do texto */
+  background-color: #1bce08;
+  padding: 4px 8px;
+  /* Acolchoamento ao redor do texto */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  font-size: 12px;
+  /* Tamanho do texto */
+}
+
+.help-button-container {
+  position: fixed;
+  bottom: 80px;
+  /* Ajuste conforme necessário para posicionar acima do botão */
+  right: 2px;
+  /* Ajuste o valor para mover mais para a direita */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.App-header h3 {
+font-weight: 800;
+font-size: 24px;
+}
+
+
+.App-banner {
+  color: white;
+  background-color:#3DAD0ABA ;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+ 
+}
+
+
+.App-banner h4{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size:  20px;
+}
+
+.buy-button {
+  font-family: 'Inter', sans-serif;
+  background-color: #e64a19;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #a34c00;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+
+
+.body-menu {
+  height: 92px; /* Defina a altura conforme necessário */
+
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border: 17px solid #D9D8D8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 10px 8px; /* Ajustei o padding vertical e horizontal */
+  background-color: #ffffff;
+}
+
+.menu-item, .menu-item-focus {
+  display: flex;
+  flex-direction: column; /* Posiciona o ícone acima do texto */
+  align-items: center;
+  padding: 6px; /* Ajustei o padding interno */
+  transition: background-color 0.3s, transform 0.2s; /* Adicionei a transição para a cor de fundo */
+  color: #6f6e6e; /* Cor do texto padrão */
+}
+
+
+
+
+.menu-item:focus, .menu-item-focus:focus {
+  outline: none;
+  transform: translateY(-2px); /* Efeito sutil de levantar o item */
+}
+
+.menu-imagem1 {
+  width: 2.5rem; /* Reduzi o tamanho do ícone */
+  height: 2.3rem; /* Reduzi o tamanho do ícone */
+  margin-bottom: 4px; /* Reduzi o espaçamento inferior entre o ícone e o texto */
+}
+
+.menu-imagem {
+  width: 2.6rem; /* Reduzi o tamanho do ícone */
+  height: 2.3rem; /* Reduzi o tamanho do ícone */
+  margin-bottom: 4px; /* Reduzi o espaçamento inferior entre o ícone e o texto */
+}
+
+.menu-text {
+  font-size: 0.9rem; /* Reduzi o tamanho da fonte */
+  font-family: 'Poppins', sans-serif; /* Adiciona a fonte Poppins */
+  text-align: center; /* Centraliza o texto */
+}
+
+.menu-item-focus .menu-text {
+  color: #17A34A; /* Cor verde para o texto quando em foco */
+  text-decoration: underline; /* Sublinhado */
+}
+
+.menu-item-focus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #17A34A;
+  border-bottom: 1px solid #17A34A;
+}
+
+
+
+
+
+
+@media (min-width:1081px) {
+  
+  .App-header {
+    background-image: url(../../img/Pi.svg);
+    background-position: center; /* Centraliza a imagem */
+    background-size: 6%; /* Mantém o tamanho reduzido conforme desejado */
+    color: #277A00;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo flexível ao início, considere ajustar se necessário */
+    align-items: center; /* Centraliza os itens flexíveis verticalmente, removido duplicata */
+    padding: 10px;
+    height: 65px;
+  }
+}
+
+
+@media (max-width:1080px) {
+  
+  .App-header {
+    background-image: url(../../img/Pi.svg);
+    background-position: center; /* Centraliza a imagem */
+    background-size: 10%; /* Mantém o tamanho reduzido conforme desejado */
+    color: #277A00;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo flexível ao início, considere ajustar se necessário */
+    align-items: center; /* Centraliza os itens flexíveis verticalmente, removido duplicata */
+    padding: 10px;
+    height: 65px;
+  }
+}
+/* CSS Global */
+.img-responsive {
+  max-width: 100%;  /* Ocupa no máximo 100% da largura do container */
+  height: auto;     /* Mantém a proporção da imagem */
+  margin: auto;     /* Centraliza a imagem */
+}
+
+/* Media Query para telas menores (ex: telefones) */
+@media only screen and (max-width: 600px) {
+  .img-responsive {
+      max-width: 76%;  /* Reduz o tamanho da imagem para telas menores */
+      height: auto;
+      margin: auto;
+  }
+}
+
+/* Estilo para telas maiores, mas não muito grandes */
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .img-responsive {
+      max-width: 50%;  /* Tamanho personalizado para telas menores dentro do intervalo */
+      height: auto;
+      margin: auto;
+  }
+}
+/* Estilo para telas com largura mínima de 801px e máxima de 1024px */
+@media only screen and (min-width: 801px) and (max-width: 1023px) {
+  .img-responsive {
+      max-width: 30%;  /* Tamanho personalizado para telas maiores dentro do intervalo */
+      height: auto;
+      margin: auto;
+  }
+}
+
+
+
+@media (max-width: 530px) {
+  
+  .App-header {
+    background-image: url(../../img/Pi.svg);
+    background-position: center; /* Centraliza a imagem */
+    background-size: 20%; /* Mantém o tamanho reduzido conforme desejado */
+    color: #277A00;
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo flexível ao início, considere ajustar se necessário */
+    align-items: center; /* Centraliza os itens flexíveis verticalmente, removido duplicata */
+    padding: 10px;
+    height: 65px;
+  }
+  
+  .body-menu{
+    width: 84%;
+  }
+ 
+  
+  
+}

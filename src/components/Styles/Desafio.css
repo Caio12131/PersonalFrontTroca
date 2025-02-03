@@ -1,0 +1,253 @@
+
+
+label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.header-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  justify-content: space-evenly;
+
+}
+.payment-page {
+font-family: 'Arial', sans-serif;
+ width: 60%;
+ margin: 10px auto;
+ border: 1px solid #cccccc6e;
+ border-radius: 25px;
+ 
+}
+
+
+
+.label {
+  margin-bottom: 5rem;
+  border: 1px solid green;
+  font-weight: bold;
+  color: #333;
+}
+
+.back-button {
+  background-color: #2D8903;
+  color: white;
+  width: 30%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  background-color: rgb(4, 90, 0);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .header-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .payment-page {
+  font-family: 'Arial', sans-serif;
+   width: 100%;
+   border: none;
+  }
+
+  .title-payment{
+    color: #2D8903;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.25rem;
+   
+  }
+
+  .back-button {
+    background-color: #2D8903;
+    color: white;
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem;
+  }
+
+  .order-bump {
+    margin: 1.3rem;
+    border-style: solid;
+    border-radius: 19px;
+    border-color: #0098c2;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.info-card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo semi-transparente */
+}
+
+.info-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info-card p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.info-card button {
+  padding: 10px 20px;
+  background-color: #3b9b3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.info-card button:hover {
+  background-color: #45a049;
+}
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.order-bump-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: auto; /* Garante que o modal não esteja em largura total por padrão */
+}
+
+.order-bump-modal {
+  background-color: #ffffff; /* Ensuring the background is white */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Max width */
+}
+
+/* Media Query para dispositivos com largura até 768px */
+@media (max-width: 768px) {
+  .order-bump-popup {
+    width: 90%; /* Define a largura do modal para 90% da largura da tela */
+    margin: 10px; /* Adiciona margem para não tocar nas bordas do dispositivo */
+  }
+}
+
+.order-bump-popup h2 {
+  margin-bottom: 10px;
+}
+
+.order-bump-popup p {
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #008607;
+  text-decoration: underline;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.benefits-list li {
+  color: black;
+}
+
+.TitleNutri {
+  color: #00bb09;
+  font-size: 22px;
+}
+
+.icon {
+  color: #00bb09;
+  margin-right: 5px;
+  font-size: 0.8em; /* Diminui o tamanho do ícone */
+}
+
+.total-payment {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+.confirm-button {
+  background-color: #4CAF50;
+}
+#cancelButton {
+  background-color: transparent; /* Remove background color */
+  color: #4CAF50; /* Set text color to red */
+}
+
+
+
+.buttons button:hover {
+  background-color: #266928;
+}

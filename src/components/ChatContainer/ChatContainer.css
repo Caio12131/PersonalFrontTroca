@@ -1,0 +1,21 @@
+select {
+  -webkit-appearance: none; /* Remove the native styling for iOS */
+  -moz-appearance: none; /* Remove the native styling for Firefox */
+  appearance: none; /* Standard appearance reset */
+  background-color: linear-gradient(to bottom, #ffcccc, #ff9999); /* Gradiente vermelho clarinho */
+  color: black; /* Define a cor do texto */
+  border: 1px solid #ccc; /* Opcional: define a borda */
+  border-radius: 4px; /* Opcional: bordas arredondadas */
+  padding: 10px; /* Opcional: espaçamento interno */
+}
+/* Se o seu select está dentro de um container com uma classe, use-a */
+.container select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: linear-gradient(to bottom, #ffcccc, #ff9999);
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
