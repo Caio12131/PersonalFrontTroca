@@ -1,3 +1,6 @@
 name = "personal-inteligente"
 
 pages_build_output_dir = "./build"  # Defina a pasta correta de saída do build
+
+[build]
+command = "yarn install && yarn build"
