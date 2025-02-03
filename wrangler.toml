@@ -3,4 +3,9 @@ name = "personal-inteligente"
 pages_build_output_dir = "./build"  # Defina a pasta correta de saída do build
 
 [build]
-command = "yarn install && yarn build"
+
+command = "npm install --legacy-peer-deps && npm run build"
+output_dir = "build"
+
+[build.environment]
+NODE_VERSION = "18"
