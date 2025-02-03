@@ -6,8 +6,8 @@ workers_dev = true
 
 [build]
 command = "npm run build"
-upload.format = "service-worker"
-pages_build_output_dir = "build"
+upload.format = "directory"  # Alterado de "service-worker" para "directory"
+pages_build_output_dir = "build"  # Certifique-se de que este diretório existe após o build
 
 [env.production]
 name = "personal-inteligente-prod"
