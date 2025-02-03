@@ -1,15 +1,3 @@
 name = "personal-inteligente"
-type = "javascript"
 
-account_id = "e1057b9d90ac5608b750b856533975eaac23f"
-workers_dev = true
-
-[build]
-command = "npm run build"
-upload.format = "directory"  # Certificado que o formato de upload é para diretório
-pages_build_output_dir = "build"  # Verifique se esse diretório é gerado após o build
-
-[env.production]
-name = "personal-inteligente-prod"
-workers_dev = false  # Para o ambiente de produção, workers_dev deve ser falso
-route = "seu- domínio.com/*"  # Adicione uma rota para o ambiente de produção, se necessário
+pages_build_output_dir = "./build"  # Defina a pasta correta de saída do build
