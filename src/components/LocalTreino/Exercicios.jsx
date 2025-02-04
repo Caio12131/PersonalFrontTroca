@@ -73,7 +73,7 @@ export default function WorkoutGenerator({ tickets }) {
       setErrorMessage('');
       setIsLoading(true);
 
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/generateWorkout`, {
+      const response = await fetch(`http://3.17.177.120/api/generateWorkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
