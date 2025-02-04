@@ -92,7 +92,7 @@ export default function LocalTreino() {
         setIsLoading(false)
       }
     }
-
+//
     fetchWorkout()
   }, [user])
 
